@@ -43,7 +43,7 @@
             android:textStyle="bold" />
 
         <EditText
-                android:id="@+id/username"
+                android:id="@+id/usernameId"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:hint="@string/enterUsername"
@@ -71,7 +71,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/passwordId"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:paddingLeft="10dp"
@@ -141,17 +141,6 @@
                 android:textStyle="bold" />
 
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/printHere"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="printHere"
-            android:textColor="#ff00ff"
-            android:textSize="20sp"
-            android:layout_marginLeft="20dp"
-            android:textStyle="bold" />
-
 
     </LinearLayout>
 
