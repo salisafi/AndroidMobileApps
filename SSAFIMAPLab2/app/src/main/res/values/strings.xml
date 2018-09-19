@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MAP524-Lab2</string>
+    <string name="student_name">Salimeh Safi</string>
+    <string name="username">Username</string>
+    <string name="enterUsername">Enter Username</string>
+    <string name="password">Password</string>
+    <string name="enterPassword">Enter Username</string>
+</resources>
