@@ -8,13 +8,15 @@
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="449dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:weightSum="1"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
         <TextView
+            android:id="@+id/stdNameTextView"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="#0000ff"
@@ -26,132 +28,196 @@
 
             />
 
-        <LinearLayout
-            android:layout_width="110dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:gravity="left"
-            android:orientation="vertical"
-            android:textAlignment="gravity">
-
-            <TextView
-                android:id="@+id/hiTextview"
-                android:layout_width="wrap_content"
-                android:layout_height="43dp"
-                android:layout_marginTop="15dp"
-                android:paddingLeft="5dp"
-                android:text="Hi World"
-                android:textSize="22sp" />
-
-            <RadioGroup
-                android:id="@+id/HiRadios"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="110dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/hiTextview">
+                android:layout_below="@+id/stdNameTextView"
+                android:layout_weight="0.5"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:textAlignment="gravity">
 
+                <TextView
+                    android:id="@+id/hiTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="5dp"
+                    android:text="@string/hi_world"
+                    android:textSize="22sp" />
 
-                <RadioButton
-                    android:id="@+id/AliceRadio"
+                <RadioGroup
+                    android:id="@+id/HiRadios"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Alice"
-                    android:textSize="20sp"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="83dp" />
+                    android:layout_below="@+id/hiTextview">
 
-                <RadioButton
-                    android:id="@+id/BobRadio"
+
+                    <RadioButton
+                        android:id="@+id/AliceRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/alice"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="83dp" />
+
+                    <RadioButton
+                        android:id="@+id/BobRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bob"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="139dp" />
+
+                    <RadioButton
+                        android:id="@+id/CarolRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/carol"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="83dp" />
+
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/HiBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Bob"
-                    android:textSize="20sp"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="139dp" />
+                    android:layout_below="@+id/HiRadios"
+                    android:text="@string/say_hi"
+                    android:textSize="20sp" />
 
-                <RadioButton
-                    android:id="@+id/CarolRadio"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Carol"
-                    android:textSize="20sp"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="83dp" />
+            </RelativeLayout >
 
-
-            </RadioGroup>
-
-            <Button
-                android:id="@+id/HiBtn"
+            <!-- second column -->
+            <RelativeLayout
+                android:id="@+id/secssion1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SAY HI"
-                android:textSize="20sp" />
+                android:layout_below="@+id/stdNameTextView"
+                android:layout_weight="0.5"
+                android:baselineAligned="false"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:textAlignment="gravity">
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/helloTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_below="@+id/HelloBtn"
+                    android:layout_marginTop="15dp"
+                    android:background="#ff0000"
+                    android:gravity="start"
+                    android:paddingLeft="5dp"
+                    android:text="Hello Seneca"
+                    android:textSize="22sp" />
 
-        <!-- second column -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:gravity="right"
-            android:orientation="vertical"
-            android:textAlignment="gravity">
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/helloTextview"
-                android:layout_width="wrap_content"
-                android:layout_height="43dp"
-                android:layout_marginTop="15dp"
-                android:paddingLeft="5dp"
-                android:text="Hello Seneca"
-                android:textSize="22sp" />
 
-            <RadioGroup
-                android:id="@+id/helloRadios"
+                    <RadioButton
+                        android:id="@+id/DaveRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dave"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="83dp" />
+
+                    <RadioButton
+                        android:id="@+id/EveRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/eve"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="139dp" />
+
+                    <RadioButton
+                        android:id="@+id/FredRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fred"
+                        android:textSize="20sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="83dp" />
+
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/HelloBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/helloRadios"
+                    android:text="@string/say_hello"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+            <!-- Second row -->
+            <RelativeLayout
+                android:id="@+id/checkboxes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/helloTextview">
+                android:orientation="vertical"
+                android:background="#ff00ff">
 
-
-                <RadioButton
-                    android:id="@+id/DaveRadio"
+                <CheckBox
+                    android:id="@+id/redCheckBox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dave"
-                    android:textSize="20sp"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="83dp" />
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#ff0000"
+                    android:text="Red"
+                     />
 
-                <RadioButton
-                    android:id="@+id/EveRadio"
+                <CheckBox
+                    android:id="@+id/YellowCheckBox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Eve"
-                    android:textSize="20sp"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="139dp" />
+                    android:background="#ffff00"
+                    android:text="Yellow" />
 
-                <RadioButton
-                    android:id="@+id/FredRadio"
+
+                <CheckBox
+                    android:id="@+id/GreenCheckBox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fred"
-                    android:textSize="20sp"
-                    tools:layout_editor_absoluteX="16dp"
-                    tools:layout_editor_absoluteY="83dp" />
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="#00ff00"
+                    android:text="Green" />
 
+                <!--  <CheckBox
+                    android:id="@+id/YellowCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Green" />  -->
 
-            </RadioGroup>
+            </RelativeLayout >
 
             <Button
-                android:id="@+id/HelloBtn"
+                android:id="@+id/ColorBtn"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="SAY HELLO"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/checkboxes"
+                android:text="COLORS"
+                android:gravity="center"
                 android:textSize="20sp" />
-
-        </LinearLayout>
 
     </LinearLayout> <!-- big layout -->
 

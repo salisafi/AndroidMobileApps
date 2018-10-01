@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">MAP524-Assign1</string>
     <string name="student_name">Salimeh Safi</string>
+    <string name="say_hello">SAY HELLO</string>
+    <string name="fred">Fred</string>
+    <string name="eve">Eve</string>
+    <string name="dave">Dave</string>
+    <string name="say_hi">SAY HI</string>
+    <string name="bob">Bob</string>
+    <string name="carol">Carol</string>
+    <string name="alice">Alice</string>
+    <string name="hi_world">Hi World</string>
 </resources>
