@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="449dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#0000ff"
+            android:gravity="center"
+            android:text="@string/student_name"
+            android:textColor="#ffff00"
+            android:textFontWeight="bolder"
+            android:textSize="30dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:textAlignment="gravity">
+
+            <TextView
+                android:id="@+id/hiTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="5dp"
+                android:text="Hi World"
+                android:textSize="22sp" />
+
+            <RadioGroup
+                android:id="@+id/HiRadios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hiTextview">
+
+
+                <RadioButton
+                    android:id="@+id/AliceRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alice"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="83dp" />
+
+                <RadioButton
+                    android:id="@+id/BobRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bob"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="139dp" />
+
+                <RadioButton
+                    android:id="@+id/CarolRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carol"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="83dp" />
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/HiBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SAY HI"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <!-- second column -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:textAlignment="gravity">
+
+            <TextView
+                android:id="@+id/helloTextview"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="5dp"
+                android:text="Hello Seneca"
+                android:textSize="22sp" />
+
+            <RadioGroup
+                android:id="@+id/helloRadios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/helloTextview">
+
+
+                <RadioButton
+                    android:id="@+id/DaveRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dave"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="83dp" />
+
+                <RadioButton
+                    android:id="@+id/EveRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Eve"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="139dp" />
+
+                <RadioButton
+                    android:id="@+id/FredRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fred"
+                    android:textSize="20sp"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="83dp" />
+
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/HelloBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SAY HELLO"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout> <!-- big layout -->
+
+
+</android.support.constraint.ConstraintLayout>
