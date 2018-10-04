@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lab7</string>
+    <string name="app_Sina">Sina Kamali Anaraki</string>
+    <string name="app_Name">Name</string>
+    <string name="app_Dept">Dept.</string>
+    <string name="app_Year">Year</string>
+    <string name="app_Add">Add</string>
+    <string name="app_View">View</string>
+    <string name="title_activity_list_view">ListView</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_name_list">NameListActivity</string>
+    <string name="title_activity_details_left">DetailsLeft</string>
+    <string name="title_activity_details_right">DetailsRight</string>
+</resources>

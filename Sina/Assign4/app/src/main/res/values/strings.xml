@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Assign4</string>
+    <string name="app_MyName">Name: Alejandra </string>
+    <string name="app_Add">Add Team</string>
+    <string name="app_Exit">Exit</string>
+    <string name="app_Update">Update</string>
+    <string name="app_Delete">Delete</string>
+    <string name="app_Submit">Submit</string>
+    <string name="app_City">City:</string>
+    <string name="app_Name">Name:</string>
+    <string name="app_Sport">Sport:</string>
+    <string name="app_Upload">Upload Image</string>
+    <string-array name="Sport_arrays">
+        <item> </item>
+        <item>Baseball</item>
+        <item>Basketball</item>
+        <item>Football</item>
+        <item>Hockey</item>
+    </string-array>
+    <string name="app_Mvp">MVP:</string>
+    <string name="app_Stadium">Stadium:</string>
+    <string name="title_activity_add_new_team">AddNewTeamActivity</string>
+    <string name="title_activity_update">UpdateActivity</string>
+</resources>

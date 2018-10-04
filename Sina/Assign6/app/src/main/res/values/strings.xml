@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Assign6</string>
+    <string name="app_Earth">Earthquake\nParameters</string>
+    <string name="app_Number">Number Of Earthquakes:</string>
+    <string name="app_Order">Order By:</string>
+    <string name="app_StartDate">Start Date:</string>
+    <string name="app_Submit">Submit</string>
+    <string-array name="app_Spinner">
+        <item>magnitude</item>
+        <item>date</item>
+    </string-array>
+    <string name="title_activity_list">List</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/CityRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorYellow"
+        android:drawableBottom="@color/colorBlack"
+        android:text="City"
+        android:paddingStart="20sp"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/NameRow"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="30sp"
+        android:paddingStart="15dp"
+        android:background="@color/colorYellow"
+        android:drawableBottom="@color/colorBlack"
+        android:text="Name" />
+</LinearLayout>
