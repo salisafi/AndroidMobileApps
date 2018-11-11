@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lab6-MAP524</string>
+    <string name="student_name">Salime Safi</string>
+    <string name="addBtn">ADD NEW STUDENT</string>
+    <string name="viewBtn">VIEW ALL STUDENTS</string>
+    <string name="findBtn">FIND STUDENT (USING ID)</string>
+    <string name="deleteBtn">DELETE STUDENT (USING ID)</string>
+</resources>

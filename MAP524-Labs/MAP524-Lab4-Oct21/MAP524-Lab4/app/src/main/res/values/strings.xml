@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MAP524-Lab4</string>
+    <string name="title_activity_custom_adapter">CustomAdapter</string>
+</resources>

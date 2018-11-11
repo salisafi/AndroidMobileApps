@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/red"
+    tools:context="com.example.ssasi.lab6_map524.MainActivity">
+
+    <!-- first row -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/student_name"
+        android:background="@color/blue"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24sp"
+          />
+
+    <!-- second row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:layout_marginLeft="30dp"
+            android:textSize="24sp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/idET"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="ID"
+            android:inputType="number"
+            android:layout_marginLeft="30dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <!-- third row -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="24sp"
+            android:textColor="@color/blue" />
+
+        <EditText
+            android:id="@+id/nameET"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_margin="5dp"
+            android:hint="Name"
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <!-- forth row -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/markTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marks"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textSize="24sp"
+            android:textColor="@color/blue" />
+
+        <EditText
+            android:id="@+id/markET"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:hint="Marks"
+            android:textSize="24sp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <!-- last row -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- first btn -->
+        <Button
+            android:id="@+id/addBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addBtn"
+            android:layout_margin="10dp"
+            android:textSize="18sp"/>
+
+        <!-- second btn -->
+        <Button
+            android:id="@+id/viewBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/viewBtn"
+            android:layout_margin="10dp"
+            android:textSize="18sp"/>
+
+        <!-- third btn -->
+        <Button
+            android:id="@+id/findBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/findBtn"
+            android:layout_margin="5dp"
+            android:textSize="18sp"/>
+
+        <!-- forth btn -->
+        <Button
+            android:id="@+id/deleteBTN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deleteBtn"
+            android:layout_margin="5dp"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout> <!-- main Layout -->

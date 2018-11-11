@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@color/colorBlue"
+        android:gravity="center"
+        android:text="@string/app_MyName"
+        android:textColor="@color/colorYellow"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ListView
+        android:id="@+id/LeftList"
+        android:layout_width="0dp"
+        android:layout_height="557dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/colorRed"
+        android:background="@color/colorGreen"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ListView
+        android:id="@+id/RightList"
+        android:layout_width="0dp"
+        android:layout_height="558dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        android:background="@color/colorYellow"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</android.support.constraint.ConstraintLayout>

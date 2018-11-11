@@ -1,0 +1,4 @@
+#Sun Sep 23 08:44:41 EDT 2018
+base.0=C\:\\Users\\Salimeh\\Downloads\\MAP524-Lab2-20180923T113510Z-001\\MAP524-Lab2\\SSAFIMAPLab2\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
